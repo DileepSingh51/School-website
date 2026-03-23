@@ -21,13 +21,14 @@
 <div class="container">
     <h2>Student Admission Form</h2>
 
-    <form id="form">
-        <label>Student Name</label>
-        <input type="text" id="name" required>
-
-        <label>Father Name</label>
-        <input type="text" id="father" required>
-
+    <form action="https://formspree.io/f/xwvrgpbl" method="POST">
+  <input type="text" name="student_name" placeholder="Student Name" required>
+  <input type="text" name="parent_name" placeholder="Parent Name" required>
+  <input type="email" name="parent_email" placeholder="Parent Email" required>
+  <input type="tel" name="phone" placeholder="Phone Number" required>
+  <textarea name="message" placeholder="Additional Information"></textarea>
+  <button type="submit">Apply Now</button>
+</form>
         <label>Class for Admission</label>
         <select id="class" required>
             <option value="">Select Class</option>
