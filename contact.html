@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Amar Public School</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Amar <span>Public School</span></div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="admission.html">Admission</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Contact Us</h2>
+
+    <form id="contactForm">
+        <label>Your Name</label>
+        <input type="text" id="cname" required>
+
+        <label>Email</label>
+        <input type="email" id="cemail" required>
+
+        <label>Message</label>
+        <textarea id="cmsg" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <div class="success" id="csuccess"></div>
+</div>
+
+<footer>
+    © 2026 Amar Public School | All Rights Reserved
+</footer>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    document.getElementById("csuccess").innerText = "Message Sent Successfully!";
+});
+</script>
+
+</body>
+</html>

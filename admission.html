@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admission - Amar Public School</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Amar <span>Public School</span></div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="admission.html">Admission</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Student Admission Form</h2>
+
+    <form id="form">
+        <label>Student Name</label>
+        <input type="text" id="name" required>
+
+        <label>Father Name</label>
+        <input type="text" id="father" required>
+
+        <label>Class for Admission</label>
+        <select id="class" required>
+            <option value="">Select Class</option>
+            <option>Class 1</option>
+            <option>Class 2</option>
+            <option>Class 3</option>
+            <option>Class 4</option>
+            <option>Class 5</option>
+        </select>
+
+        <label>Previous School</label>
+        <input type="text" id="school">
+
+        <label>City</label>
+        <input type="text" id="city">
+
+        <label>Character Status</label>
+        <select id="character" required>
+            <option value="">Select</option>
+            <option>Excellent</option>
+            <option>Good</option>
+            <option>Average</option>
+        </select>
+
+        <button type="submit">Submit Admission</button>
+    </form>
+
+    <div class="success" id="msg"></div>
+</div>
+
+<footer>
+    © 2026 Amar Public School | All Rights Reserved
+</footer>
+
+<script>
+document.getElementById("form").addEventListener("submit", function(e){
+    e.preventDefault();
+    document.getElementById("msg").innerText = "Admission Submitted Successfully!";
+});
+</script>
+
+</body>
+</html>
